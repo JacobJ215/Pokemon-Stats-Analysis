@@ -42,7 +42,14 @@ The project also groups the Pokemon data by 'Type 1' and 'Type 2' and calculates
 As we can see with this box plot our stats are fairly evenly distributed with most IQRs ranging from 50-100. We can also see the HP as the most amount of outliers but also has the smallest "maxiumum" and "IQR"
 
 ![](images/attack_v_defense.png)
+
+
 With the chart we can see that there is a positive linear relationship between Attack and Defense
+
+Here are the results from our correlation matrix
+
+![](images/correlation_matrix.png)
+
 
 Below are the average stats compared across the primary and secondary pokemon types
 

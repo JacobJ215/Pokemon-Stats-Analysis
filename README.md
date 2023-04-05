@@ -39,6 +39,8 @@ The project uses data visualizations to explore the relationships between differ
 The project also groups the Pokemon data by 'Type 1' and 'Type 2' and calculates the statistical averages for different attributes. It then creates barplots to visualize the average Pokemon stats for each type.
 
 ![](images/feature_dist.png)
+
+
 As we can see with this box plot our stats are fairly evenly distributed with most IQRs ranging from 50-100. We can also see the HP as the most amount of outliers but also has the smallest "maxiumum" and "IQR"
 
 ![](images/attack_v_defense.png)

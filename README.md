@@ -68,5 +68,20 @@ Below are the average stats compared across the primary and secondary pokemon ty
 
 ### Predictive Analysis using Machine Learning
 
+In this section, we use machine learning to predict whether a Pokemon is legendary based on its stats. We used a variety of models to determine which one performed the best, and then fine-tuned that model using hyperparameter tuning. Finally, we evaluated the performance of the final model using ROC AUC score.
 
-The project will include a section for predictive analysis using machine learning to predict the Legendary status of Pokemon. This section uses machine learning techniques such as classification algorithms to train a model on the Pokemon data and make predictions on whether a Pokemon is Legendary or not.
+#### Preprocessing
+First, we preprocessed our data. We used a pipeline to preprocess both our numerical and categorical data. For the numerical data, we used a SimpleImputer to fill in any missing values with the mean and a StandardScaler to scale the data. For the categorical data, we used a SimpleImputer to fill in any missing values with an empty string and a OneHotEncoder to encode the data.
+
+#### Model Selection
+We compared the performance of four models: SVC, LogisticRegression, RandomForestClassifier, and XGBClassifier. We split the data into training and testing sets, fit each model to the training set, and then evaluated their performance on the testing set using accuracy score. We selected the XGBClassifier as our model as it had acheived the greatest accuracy of 0.96.
+
+#### Hyperparameter Tuning
+We fine-tuned our selected model using hyperparameter tuning with GridSearchCV. We defined a hyperparameter grid to search over and used cross-validation to find the best combination of hyperparameters. We then trained our model using the best hyperparameters.
+
+#### Model Evaluation
+
+![](images/roc_curve.png)
+
+
+Our model achieves an ROC AUC score of 0.943, indicating good performance in distinguishing between legendary and non-legendary Pokemon. We can also see from the ROC curve plot that our model's TPR is relatively high across a range of FPR values, suggesting that it is able to classify positive instances (legendary Pokemon) with good sensitivity while maintaining a low false positive rate.

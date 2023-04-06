@@ -5,6 +5,9 @@
 This is a data analysis and machine learning project that focuses on analyzing the stats of Pokemon from the popular Pokemon game series. The project utilizes Python and various data analysis libraries, including Pandas, Numpy, Seaborn, and Matplotlib, to explore and visualize the data, as well as perform statistical analysis on the Pokemon stats.
 
 
+[View on Google Colab](https://colab.research.google.com/drive/1aE61ea_nG6HwBX7OQRavFV3GiZJdNOHi?usp=sharing)
+
+
 ### Exploratory Data Analysis
 The project performs an exploratory data analysis (EDA) on the Pokemon data to gain insights and understand the structure of the data. This includes checking for null values and data types using the info() function, calculating the percentage of null values using the isnull().mean() function, and displaying summary statistics of the data using the describe() function.
 
@@ -19,7 +22,6 @@ Generation 1 vs. Generation 2:
 
 * t-statistic: 1.1763035045816723
 * p-value: 0.24050968418101457
-
 
 Based on a significance level of 0.05, we do not have enough evidence to reject the null hypothesis, as the p-value (0.24050968418101457) is greater than the significance level. Therefore, there is no statistically significant difference in the Attack stat between Generation 1 and Generation 2 of Pokemon.
 
